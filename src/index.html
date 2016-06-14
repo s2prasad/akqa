@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music Browser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+     
+     <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid navWrapper">
+          <div class="navbar-header navbar-inverse pull-left">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse pull-left" id="myNavbar">
+            <ul class="nav navbar-nav topNav ">
+              <li class="nav-item"><a class="nav-link" href="#">my music<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#">playlist</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">new</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">explore</a></li>
+            </ul>
+          </div>
+          <div class="navbar-header pull-right">
+            <a class="navbar-brand pull-right" href="#"><span class="glyphicon glyphicon-search"></span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-fluid wrapper">
+      <section id="albumList" class="col-md-8 col-sm-12">
+        <section class="album col-md-6 col-sm-12">
+          <img src="../images/Rectangle1.png" alt="" />
+          <section class="details">
+            <h3 class="albumName">New and Noteworthy</h3>
+            <p class="albumDesc">Kicking off 2016 with these new hits</p>
+          </section>
+        </section>
+        <section class="album col-md-6 col-sm-12">
+          <img src="../images/Rectangle2.png" alt="" />
+          <section class="details">
+            <h3 class="albumName">Pre-Order New Music</h3>
+            <p class="albumDesc">Available later this season</p>
+          </section>
+        </section>
+        <section class="album col-md-6 col-sm-12">
+          <img src="../images/Rectangle3.png" alt="" />
+          <section class="details">
+            <h3 class="albumName">Best of 2015</h3>
+            <p class="albumDesc">Rewind last year’s best hits</p>
+          </section>
+        </section>
+        <section class="album col-md-6 col-sm-12">
+          <img src="../images/Rectangle4.png" alt="" />
+          <section class="details">
+            <h3 class="albumName">New Artist Spotlight</h3>
+            <p class="albumDesc">Hear some of the newest hits in 2016</p>
+          </section>
+        </section>
+      </section>
+
+      <section id="songList" class="col-md-4 col-sm-12">
+        <h4>TOP SONGS</h4>
+        <section class="songs">
+          <img alt="" class="songIcon  col-sm-2 col-md-3 " src="../images/icon1.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">Panda</p>
+            <p class="songComposer">Desiigner</p>
+          </section>
+        </section>
+        <section class="songs">
+          <img  alt="" class="songIcon  col-sm-2  col-md-3" src="../images/icon2.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">Needed Me</p>
+            <p class="songComposer">Rihanna</p>
+          </section>
+        </section>
+        <section class="songs">
+          <img alt="" class="songIcon  col-sm-2 col-md-3" src="../images/icon3.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">Don’t Let Me Down</p>
+            <p class="songComposer">The Chainsmokers, Daya</p>
+          </section>
+        </section>
+        
+        <section class="collapse visible-md visible-lg" id="restSongsList">
+        <section class="songs">
+          <img alt="" class="songIcon  col-sm-2  col-md-3" src="../images/icon4.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">7 Years</p>
+            <p class="songComposer">Lukas Graham</p>
+          </section>
+        </section>
+        <section class="songs">
+          <img alt="" class="songIcon  col-sm-2 col-md-3" src="../images/icon2.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">Work</p>
+            <p class="songComposer">Rihanna, Drake</p>
+          </section>
+        </section>
+        <section class="songs">
+          <img alt="" class="songIcon  col-sm-2 col-md-3" src="../images/icon6.png">
+          <section class="songDesc  col-sm-7 col-md-9">
+            <p class="songTitle">I Took A Pill In Ibiza - Seeb Remix</p>
+            <p class="songComposer">Mike Posner</p>
+          </section>
+        </section>
+        </section>
+        <button class="visible-xs visible-sm hidden-md hidden-lg btn btn-lg btn-block col-sm-10" id="showList" data-toggle="collapse" data-target="#restSongsList">See More</button>
+      </section>
+    </section>
+
+    <footer class="footer col-md-8 col-md-offset-2">
+        <nav>
+          <ul class="nav navbar-nav container text-center">
+            <li class="nav-item"><a class="nav-link disabled">Copyright &copy; 2016, All rights reserved.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Privacy &amp; cookies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Terms of Use</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sales and Refunds</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Site Map</a></li>
+          </ul>
+        </nav>
+    </footer>
+    
+  </body>
+  </html>

@@ -1,0 +1,242 @@
+body,
+ul,
+p,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+@font-face {
+    font-family: sanfranciscodisplay;
+    src: url(../fonts/sanfranciscodisplay-regular-webfont.woff);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 700px;
+  font-family: sanfranciscodisplay, Helvetica, Arial, Sans-Serif;
+  background: #555;
+  color: white;
+  background-color: #555;
+  font-family: sanfranciscodisplay, "HelveticaNeue-Light", Arial, Helvetica;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: url("../images/Background.png"), url("../images/Layer15.png"); 
+  background-size: cover;
+  background-position: center;
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-weight: normal;
+  margin: 0px;
+}
+body h1 {
+  font-size: 80px;
+  font-family: sanfranciscodisplay,'HelveticaNeue-UltraLight', Helvetica, Arial, Sans-Serif;
+}
+body li {
+  font-size: 14px;
+  line-height: 14px;
+}
+body h4{
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+body ul {
+  list-style-type: none;
+  padding: 0;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+header nav{
+  width: 100%;
+  background-color: #131417; 
+  text-align: center;
+  opacity: 0.6;
+  height: 70px;
+  filter: alpha(opacity=60);
+}
+.navWrapper {
+  display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.topNav {
+     display: inline-block;
+    float: none;
+    vertical-align: top;
+  
+  padding-top: 10px;
+}
+.topNav li a {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.wrapper {
+  position: relative;
+  top: 70px;
+}
+#albumList{
+  border-right: 1px solid #5c5c5f;
+}
+#albumList .album {
+      max-height: 415px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.album img{
+  width: 100%;
+}
+.albumName {
+  margin-bottom: 2px;
+}
+.details {
+  width: 100%;
+  position: absolute;
+      bottom: 49px;
+    left: 44px;
+}
+.songs {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#songList {
+  
+}
+#songList h4 {
+  margin-bottom: 20px;
+}
+#songList .songIcon {
+  float: left;
+  
+  border-radius: 50%;
+}
+.songDesc {
+      
+}
+.songTitle {
+  color:#fef378;
+}
+.footer {
+  position: relative;
+    top: 75px;
+    min-height: 100px;
+}
+.footer .nav {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    float: none;
+}
+.footer .nav a {
+  color: #fef378;
+  font-size: 11px;
+}
+.footer .nav a.disabled {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  background: transparent;
+}
+.nav>li>a.disabled:focus, .nav>li>a.disabled:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+   
+    section.col-sm-12 {
+     padding: 0;
+    } 
+    .album {
+      padding-bottom: 10px;
+    }
+    body {
+      padding:0;
+      font-size: 15px;
+    }
+    .details {
+      left: 10px;
+    }
+    header {
+      z-index: 2;
+      position: relative;
+    }
+    header nav {
+      opacity: 1;
+    }
+    .wrapper {
+      top: 30px;
+      z-index: 1
+    }
+    #songList {
+      padding: 0;
+
+    }
+    #songList h4 {
+      padding-left: 20px;
+    }
+    #myNavbar {
+    background-color: #000000;
+    padding: 25px;
+    padding-left: 40px;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    width: 100%;
+    text-align: left;
+    }
+    .navbar-nav>li>a {
+      padding: 0;
+      padding-left: 10px;
+    }
+    .navWrapper {
+      display: block;
+    }
+    .navWrapper button {
+      z-index: 4;
+    }
+    .topNav .nav-item {
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .topNav .nav-item .nav-link {
+      padding-top: 5px;
+    }
+    .songTitle {
+      white-space: nowrap;
+    }
+    #albumList{
+      border-right: none;
+    }
+    .footer {
+      top: 50px;
+    }
+    #showList {
+      background-color: #fef378;
+      text-align: center;
+      margin: 0 auto;
+      color: #000000;
+      border-radius: 24px;
+  }  
+}
